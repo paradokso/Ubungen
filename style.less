@@ -407,3 +407,53 @@ li{
 	bottom: 0;
 	right: 0;
 }
+
+
+/****************Blog*************************/
+
+.blog{
+	background-color: #fff;
+	color: #585f72;//// !!!!!!!!!!!!!!!!!
+	
+	h2.title{
+		padding-top: 94px;
+	}
+	.subtitle{
+		&:before,
+		&:after{
+			background-color: rgba(88,82,114,0.5) 
+		}	
+	}
+
+	&_body{
+		width: 44.7%;
+		margin-right: 2%;
+		text-align: justify;
+	}
+
+	&_side{
+		width: 19.7%;
+	}
+
+	&_body,
+	&_side{
+		margin-top: 98px;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.cover{
+		width: 100%;
+		background-color: red;
+		display: block;
+		height: 375px;
+		border-radius: 10px;
+		margin-bottom: 30px;
+	}
+
+	.detailes{
+		font-style: italic;
+		opacity: 80%;
+		font-size: 0.75em;
+	}
+}

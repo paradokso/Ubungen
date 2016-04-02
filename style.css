@@ -335,3 +335,42 @@ li {
   bottom: 0;
   right: 0;
 }
+/****************Blog*************************/
+.blog {
+  background-color: #fff;
+  color: #585f72;
+}
+.blog h2.title {
+  padding-top: 94px;
+}
+.blog .subtitle:before,
+.blog .subtitle:after {
+  background-color: rgba(88, 82, 114, 0.5);
+}
+.blog_body {
+  width: 44.7%;
+  margin-right: 2%;
+  text-align: justify;
+}
+.blog_side {
+  width: 19.7%;
+}
+.blog_body,
+.blog_side {
+  margin-top: 98px;
+  display: inline-block;
+  vertical-align: top;
+}
+.blog .cover {
+  width: 100%;
+  background-color: red;
+  display: block;
+  height: 375px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.blog .detailes {
+  font-style: italic;
+  opacity: 80%;
+  font-size: 0.75em;
+}
