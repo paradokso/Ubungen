@@ -10,6 +10,7 @@
 @text_c: #fafafa;
 @subtitle_c: #efedf0;
 @text_c_2: #c5c1d0;
+@btn_c: #bc492c;
 
 .transform_rotate(@grad){
 	-moz-transform: rotate(@grad);
@@ -354,12 +355,48 @@ li{
 		vertical-align: top;
 		margin: 0 3% 10px;
 		.transform_rotate(45deg);
+		overflow: hidden;
+		font-size: 0.7em;
 
 		&:before{
 			content: "";
 			display: block;
-			padding-top: 92%; 	/* initial ratio of 1:1*/
+			padding-top: 100%; 	/* initial ratio of 1:1*/
 		}
+	}
+
+	.active{
+		background-color: @bgc_main;
+	}
+
+	div{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		.transform_rotate(-45deg);
+
+	}
+
+	.subtitle{
+		margin-top: 10%;
+		font-size: 1em;
+		text-transform: none;
+	}
+
+	button{
+		width: 64px;
+		height: 64px;
+		display: block;
+		margin: auto;
+		margin-top: 12px;
+		background-color: @btn_c;
+		border-radius: 64px;
+		border: none;
+		color: #fff;
+		font-size: 1.5em;
+		font-weight: bold;
 	}
 }
 
