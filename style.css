@@ -166,7 +166,7 @@ li {
   position: relative;
 }
 .bar_filling {
-  width: 80%;
+  width: 0;
   height: 100%;
   border-radius: inherit;
   background-color: #ffd670;
@@ -178,12 +178,14 @@ li {
   left: 8%;
   text-transform: uppercase;
   font-weight: bold;
+  z-index: 1;
 }
 .bar_value {
   color: #534664;
   position: absolute;
   top: 25%;
   right: 10%;
+  z-index: 2;
 }
 /******************Portfolio**************************/
 .portfolio {
@@ -374,3 +376,140 @@ li {
   opacity: 80%;
   font-size: 0.75em;
 }
+.blog .thumbnail {
+  width: 10%;
+  height: 70px;
+  background-color: grey;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.blog .comments_body {
+  display: inline-block;
+  vertical-align: top;
+  width: 87%;
+  margin-left: 1.8%;
+}
+.blog footer {
+  overflow: hidden;
+}
+.blog .blog_slider {
+  width: 2450px;
+  margin-top: 160px;
+  text-align: left;
+}
+.blog_card {
+  width: 275px;
+  height: 478px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 5px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+.blog .placeholder {
+  background-color: orange;
+  width: 100%;
+  height: 293px;
+}
+.blog .card_descr {
+  width: 100%;
+  height: 185px;
+}
+.slider_bar {
+  background-color: #eef;
+  border-radius: 25px;
+  height: 15px;
+  width: 100%;
+  margin-top: 52px;
+  margin-bottom: 90px;
+}
+.active_el {
+  background-color: orange;
+  border-radius: 20px;
+  height: 100%;
+  width: 30%;
+}
+.active_el:hover {
+  cursor: pointer;
+}
+.comments_block {
+  margin-bottom: 15px;
+  border-bottom: 1px solid grey;
+}
+.comments_block > .comments_block {
+  padding-left: 10%;
+  padding-top: 10px;
+  margin-top: 20px;
+  border: none;
+  border-top: 1px solid grey;
+}
+.comments_block .reply {
+  color: orange;
+}
+/*************Twitter*************/
+.round_btn {
+  border: 1px solid #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 38px;
+  display: inline-block;
+  font-size: 2em;
+  line-height: 1.15;
+  margin-top: 57px;
+  margin-bottom: 100px;
+}
+.round_btn:hover {
+  cursor: pointer;
+}
+/**************Contact******************/
+.email,
+.phone {
+  display: inline-block;
+  vertical-align: top;
+}
+/***********Form***********************/
+form input,
+form textarea {
+  border: none;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+form input {
+  padding: 20px 30px;
+  width: 48.5%;
+}
+form textarea {
+  width: 100%;
+  padding: 20px 30px;
+}
+.submit_btn {
+  background-color: #ffd670;
+}
+.submit_btn:hover {
+  background-color: #ffe5a3;
+  -webkit-transition: background-color 0.5s ease-out 0s;
+  -moz-transition: background-color 0.5s ease-out 0s;
+  -o-transition: background-color 0.5s ease-out 0s;
+  transition: background-color 0.5s ease-out 0s;
+}
+.contact form {
+  width: 60%;
+  margin: auto;
+}
+.contact form input:first-of-type {
+  float: left;
+}
+.contact form input:nth-of-type(2) {
+  float: right;
+}
+.contact form textarea {
+  clear: both;
+}
+/*****************************/

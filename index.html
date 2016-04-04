@@ -57,27 +57,28 @@
 				<div class="about_circle_btn">
 					<div class="content"></div>
 				</div>
-				<div class="about_skills">
+				<div class="about_skills" id="progressBar">
 					<div>
 						<h3 class="subtitle">My skills</h3>
 						<span>Design</span>
-						<div class="bar">
-							<div class="bar_filling">
-								<span class="bar_value">80%</span>
+						<div class="bar" >
+							<div class="bar_filling" >
+								<div></div>
+								<span class="bar_value" data-value="80"></span>
 							</div>
 							<span class="bar_name">Adobe PH</span>
 							
 						</div>
 						<div class="bar">
 							<div class="bar_filling">
-								<span class="bar_value">60%</span>
+								<span class="bar_value" data-value="60"></span>
 							</div>
 							<span class="bar_name">Adope Ill</span>
 							
 						</div>
 						<div class="bar">
 							<div class="bar_filling">
-								<span class="bar_value">62%</span>
+								<span class="bar_value" data-value="62"></span>
 							</div>
 							<span class="bar_name">Adobe Draw</span>
 							
@@ -87,21 +88,21 @@
 						<span>Coding</span>
 						<div class="bar">
 							<div class="bar_filling">
-								<span class="bar_value">100%</span>
+								<span class="bar_value" data-value="100"></span>
 							</div>
 							<span class="bar_name">Css</span>
 							
 						</div>
 						<div class="bar">
 							<div class="bar_filling">
-								<span class="bar_value">90%</span>
+								<span class="bar_value" data-value="90"></span>
 							</div>
 							<span class="bar_name">HTML</span>
 							
 						</div>
 						<div class="bar">
 							<div class="bar_filling">
-								<span class="bar_value">40%</span>
+								<span class="bar_value" data-value="40"></span>
 							</div>
 							<span class="bar_name">JS</span>
 							
@@ -206,60 +207,135 @@
 				<div class="comments">
 					<h3 class="comments_title">3 coments</h3>
 					<div class="comments_block">
-						<img src="#" alt="#">
-						<span class="author">John Doe</span>
-						<i class="date">23 Jan 2015</i>
-						<div class="a">Reply</div>
-						<p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore eveniet magni.</p>
+						<img src="#" alt="#" class="thumbnail">
+							<section class="comments_body">
+							<span class="author">John Doe</span>
+							<i class="date">23 Jan 2015</i>
+							<span class="reply">Reply</span>
+							<p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore eveniet magni.</p>
+						</section>
+						<div class="comments_block">
+							<img src="#" alt="#" class="thumbnail">
+							<section class="comments_body">
+								<span class="author">John Doe</span>
+								<i class="date">23 Jan 2015</i>
+								<span class="reply">Reply</span>
+								<p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore eveniet magni.</p>
+							</section>
+						</div>
 					</div>
+					
 					<div class="comments_block">
-						<img src="#" alt="#">
-						<span class="author">John Doe</span>
-						<i class="date">23 Jan 2015</i>
-						<div class="a">Reply</div>
-						<p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore eveniet magni.</p>
+						<img src="#" alt="#" class="thumbnail">
+						<section class="comments_body">
+							<span class="author">John Doe</span>
+							<i class="date">23 Jan 2015</i>
+							<span class="reply">Reply</span>
+							<p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore eveniet magni.</p>
+						</section>
 					</div>
-					<div class="comments_block">
-						<img src="#" alt="#">
-						<span class="author">John Doe</span>
-						<i class="date">23 Jan 2015</i>
-						<div class="a">Reply</div>
-						<p class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore eveniet magni.</p>
-					</div>
-					<div class="comments_title">Leave a reply</div>
+					<h3 class="title comments_title">Leave a reply</h3>
 					<p>Your email</p>
 					<form action="get">
 						<input type="text" name = "name" placeholder="Your Name*">
 						<input type="email" name="email" placeholder="Your email*">
 						<textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment*"></textarea>
-						<input type="submit" name="submit" placeholder="Post comment">
+						<input type="submit" name="submit" value="Post comment" class="submit_btn">
 					</form>
 				</div>
 			</section>
 			<aside class="blog_side"></aside>
-			<fooer>
-				<div class="blog_slider"></div>
+			<footer>
+				<div class="blog_slider">
+					<div class="blog_card">
+						<div class="placeholder"><img src="" alt=""></div>
+						<div class="card_descr">
+							<h2></h2>
+							<p></p>
+							<a href=""></a>
+						</div>
+					</div>
+					<div class="blog_card">
+						<div class="placeholder"><img src="" alt=""></div>
+						<div class="card_descr">
+							<h2></h2>
+							<p></p>
+							<a href=""></a>
+						</div>
+					</div>
+					<div class="blog_card">
+						<div class="placeholder"><img src="" alt=""></div>
+						<div class="card_descr">
+							<h2></h2>
+							<p></p>
+							<a href=""></a>
+						</div>
+					</div>
+					<div class="blog_card">
+						<div class="placeholder"><img src="" alt=""></div>
+						<div class="card_descr">
+							<h2></h2>
+							<p></p>
+							<a href=""></a>
+						</div>
+					</div>
+					<div class="blog_card">
+						<div class="placeholder"><img src="" alt=""></div>
+						<div class="card_descr">
+							<h2></h2>
+							<p></p>
+							<a href=""></a>
+						</div>
+					</div>
+					<div class="blog_card">
+						<div class="placeholder"><img src="" alt=""></div>
+						<div class="card_descr">
+							<h2></h2>
+							<p></p>
+							<a href=""></a>
+						</div>
+					</div>
+					<div class="blog_card">
+						<div class="placeholder"><img src="" alt=""></div>
+						<div class="card_descr">
+							<h2></h2>
+							<p></p>
+							<a href=""></a>
+						</div>
+					</div>
+					<div class="blog_card">
+						<div class="placeholder"><img src="" alt=""></div>
+						<div class="card_descr">
+							<h2></h2>
+							<p></p>
+							<a href=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="slider_bar">
+					<div class="active_el"></div>
+				</div>
 			</footer>
 		</div>
 	</section>
 	<section class="twitter">
 		<div class="wrapper">
 		<div class="logo"></div>
-			<div class="twitter_slider"></div>
-			<span class="btn-left" id="left"></span>
-			<span class="btn-right" id="right"></span>
+			<div class="twitter_slider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus accusantium, perferendis laboriosam.</div>
+			<span class="round_btn btn-left" id="left">	&#8249;</span>
+			<span class="round_btn btn-right" id="right">&#8250;</span>
 		</div>
 	</section>
 	<section class="contact">
 		<div class="wrapper">
 			<h2 class="title">Contact</h2>
 			<span class="subtitle">Recent blog</span>
-			<info><a href="#" class="email">email@to.em</a><a href="#" class="phone">0(800)555-666-22</a></info>
+			<div><a href="#" class="email">email@to.em</a><a href="#" class="phone">0(800)555-666-22</a></div>
 			<form action="">
 				<input type="text" name="name" placeholder="Your name*">
 				<input type="email" name="email" placeholder="Your email">
 				<textarea name="comment" id="" cols="30" rows="10" placeholder="Your comment"></textarea>
-				<input type="submit" placeholder="Post comment">
+				<input type="submit" value="Post comment">
 			</form>
 		</div>
 	</section>
@@ -268,5 +344,22 @@
 			<p>(c) all rights are reserved. 2016</p>
 		</div>
 	</footer>
+
+
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript">
+		function progress($element) {
+        	$this=$element;
+        	prWidth = $(this).data("value")* $element.width() / 100;
+        	$this.find('.bar_filling').each(function(){
+        		var progressBarVal = $(this).find('.bar_value').data('value');
+        		$(this).find('.bar_value').text(progressBarVal + "% ");
+
+        		var progressBarWidth = progressBarVal*$element.width()/100;
+        		$(this).animate({ width: progressBarWidth }, 2500);
+        	})  	
+    	}
+        progress($('#progressBar'));
+	</script>
 </body>
 </html>
