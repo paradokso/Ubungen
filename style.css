@@ -263,6 +263,7 @@ li {
 .categories > li.active a {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 2px;
+  outline: 0;
 }
 .categories > li.active a:hover {
   border-color: #534664;
@@ -279,7 +280,7 @@ li {
   position: relative;
   width: 16.5%;
   border-radius: 20px;
-  background-color: #fff0c9;
+  cursor: pointer;
   display: inline-block;
   vertical-align: top;
   margin: 0 3% 10px;
@@ -289,6 +290,8 @@ li {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   overflow: hidden;
+  background-color: #fff0c9;
+  color: #000;
   font-size: 0.7em;
 }
 .works_present li:before {
@@ -299,6 +302,7 @@ li {
 }
 .works_present .active {
   background-color: #5b5766;
+  color: #fff;
 }
 .works_present div {
   position: absolute;
@@ -329,6 +333,9 @@ li {
   color: #fff;
   font-size: 1.5em;
   font-weight: bold;
+}
+.works_present .open_categories {
+  box-shadow: 0 0 15px 5px #fff0c9;
 }
 .content {
   position: absolute;

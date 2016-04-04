@@ -138,7 +138,7 @@
 			<section class="slider"></section>
 			<section class="works">
 				<div>
-					<ul class="categories">
+					<ul class="categories" id="openCategory">
 						<li class="active"><a href="#" class="link">All</a></li>
 						<li><a href="#" class="link">Web design</a></li>
 						<li><a href="#" class="link">Coding</a></li>
@@ -146,46 +146,55 @@
 						<li><a href="#" class="link">Freebis</a></li>
 					</ul> 
 				</div>
-				<div class="works_present">
+				<div class="works_present" id="myWorks">
 					<ul>
-						<li>
-							<div>
-								<h3 class="subtitle"></h3>
-								<span></span>
-							</div>
-						</li>
-						<li>
-							<div>
-								<h3 class="subtitle"></h3>
-								<span></span>
-							</div>
-						</li>
-						<li>
-							<div>
-								<h3 class="subtitle"></h3>
-								<span></span>
-							</div>
-						</li>
-						<li class="active">
-							<div>
+						<li data-category="Web">
+							<div >
 								<h3 class="subtitle">iOS development</h3>
 								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, atque saepe harum.</span>
 								<button>+</button>
 							</div>
 						</li>
-						<li>
-							
-						</li>
-						<li>
-							<div>
-								<h3 class="subtitle"></h3>
-								<span></span>
+						<li data-category="Web">
+							<div >
+								<h3 class="subtitle">iOS development</h3>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, atque saepe harum.</span>
+								<button>+</button>
 							</div>
 						</li>
-						<li>
-							<div>
-								<h3 class="subtitle"></h3>
-								<span></span>
+						<li data-category="Code">
+							<div >
+								<h3 class="subtitle">iOS development</h3>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, atque saepe harum.</span>
+								<button>+</button>
+							</div>
+						</li>
+						<li class="active" data-category="Code">
+							<div >
+								<h3 class="subtitle">iOS development</h3>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, atque saepe harum.</span>
+								<button>+</button>
+							</div>
+						</li>
+						<li data-category="Code">
+							<div >
+								<h3 class="subtitle">iOS development</h3>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, atque saepe harum.</span>
+								<button>+</button>
+							</div>
+						</li>
+						<li data-category="Photo">
+							<div >
+								<h3 class="subtitle">iOS development</h3>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, atque saepe harum.</span>
+								<button>+</button>
+							</div>
+						</li>
+						<li data-category="Freeby">
+							<div >
+								<h3 class="subtitle">iOS development</h3>
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, atque saepe harum.</span>
+								<button>+</button>
 							</div>
 						</li>
 					</ul>
@@ -347,19 +356,6 @@
 
 
 	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script type="text/javascript">
-		function progress($element) {
-        	$this=$element;
-        	prWidth = $(this).data("value")* $element.width() / 100;
-        	$this.find('.bar_filling').each(function(){
-        		var progressBarVal = $(this).find('.bar_value').data('value');
-        		$(this).find('.bar_value').text(progressBarVal + "% ");
-
-        		var progressBarWidth = progressBarVal*$element.width()/100;
-        		$(this).animate({ width: progressBarWidth }, 2500);
-        	})  	
-    	}
-        progress($('#progressBar'));
-	</script>
+	<script src="script.js"></script>
 </body>
 </html>
