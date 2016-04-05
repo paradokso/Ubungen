@@ -17,6 +17,7 @@ a {
 }
 ul {
   padding: 0;
+  margin: auto;
 }
 li {
   list-style: none;
@@ -57,8 +58,15 @@ li {
   right: 50%;
 }
 /***************HEADER ********************/
+.header {
+  background: url('download.jpeg') 0 0 no-repeat;
+  background-size: cover;
+  transition: 0s linear;
+  transition-property: background-position;
+}
 .navigation {
   margin-bottom: 22px;
+  padding-top: 25px;
 }
 .navigation li {
   display: inline-block;
@@ -99,7 +107,7 @@ li {
 .header_footer {
   font-weight: bold;
   margin-top: 164px;
-  margin-bottom: 128px;
+  padding-bottom: 128px;
 }
 .header_footer span {
   margin: 0% 40px;
@@ -258,7 +266,7 @@ li {
 .categories > li {
   display: inline-block;
   vertical-align: top;
-  margin: 0 25px;
+  margin: 25px 25px;
 }
 .categories > li.active a {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -280,7 +288,6 @@ li {
   position: relative;
   width: 16.5%;
   border-radius: 20px;
-  cursor: pointer;
   display: inline-block;
   vertical-align: top;
   margin: 0 3% 10px;
@@ -303,6 +310,7 @@ li {
 .works_present .active {
   background-color: #5b5766;
   color: #fff;
+  cursor: pointer;
 }
 .works_present div {
   position: absolute;
@@ -336,6 +344,7 @@ li {
 }
 .works_present .open_categories {
   box-shadow: 0 0 15px 5px #fff0c9;
+  cursor: pointer;
 }
 .content {
   position: absolute;
@@ -432,12 +441,15 @@ li {
   width: 100%;
   margin-top: 52px;
   margin-bottom: 90px;
+  position: relative;
 }
 .active_el {
   background-color: orange;
   border-radius: 20px;
   height: 100%;
   width: 30%;
+  position: absolute;
+  left: 0;
 }
 .active_el:hover {
   cursor: pointer;
@@ -457,6 +469,10 @@ li {
   color: orange;
 }
 /*************Twitter*************/
+.twitter {
+  background: url('download.jpeg') 0 0 no-repeat;
+  background-size: cover;
+}
 .round_btn {
   border: 1px solid #fff;
   width: 38px;
@@ -520,3 +536,13 @@ form textarea {
   clear: both;
 }
 /*****************************/
+.fixed {
+  position: fixed;
+  display: none;
+  background-color: #5b5766;
+  box-shadow: 0 1px 10px 0 #666;
+  z-index: 99;
+  width: 100%;
+  height: 50px;
+  transition: all 0s linear 0s;
+}
